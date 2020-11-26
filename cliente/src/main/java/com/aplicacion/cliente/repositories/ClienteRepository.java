@@ -17,4 +17,6 @@ public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
     List<Cliente> findAll();
 
+    void delete(Cliente cliente);
+
 }

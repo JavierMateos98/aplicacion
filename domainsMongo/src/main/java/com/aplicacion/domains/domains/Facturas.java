@@ -1,5 +1,7 @@
 package com.aplicacion.domains.domains;
 
+import com.aplicacion.cliente.domains.Cliente;
+import com.aplicacion.cliente.domains.Visitas;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -12,11 +14,29 @@ public class Facturas {
 
     private String cuantia;
 
+    private int forma_pago;
+
     private Visitas visita;
 
     private Cliente cliente;
 
     private String estado_factura;
+
+    public int getForma_pago() {
+        return forma_pago;
+    }
+
+    public void setForma_pago(int forma_pago) {
+        this.forma_pago = forma_pago;
+    }
+
+    public String getEstado_factura() {
+        return estado_factura;
+    }
+
+    public void setEstado_factura(String estado_factura) {
+        this.estado_factura = estado_factura;
+    }
 
     public Visitas getVisita() {
         return visita;

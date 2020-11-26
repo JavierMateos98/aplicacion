@@ -2,13 +2,12 @@ package com.aplicacion.cliente.controller;
 
 import com.aplicacion.cliente.service.ClienteService;
 import com.aplicacion.cliente.domains.Cliente;
+import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,6 +17,10 @@ public class ClienteController {
 
     @Autowired
     ClienteService clienteService;
+
+    @Qualifier("eurekaClient")
+    @Autowired
+    private EurekaClient eurekaClient;
 
     @GetMapping("/provincia/{provincia}")
     public ResponseEntity<?> buscarProvincia(@PathVariable("provincia") String provincia){
@@ -40,6 +43,13 @@ public class ClienteController {
         } else {
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
         }
+
+    }
+
+    @DeleteMapping("/eliminar/{id}")
+    public void eliminarClientes(@PathVariable("id") int id){
+
+        clienteService.eliminar(clienteService.listarCliente(id));
 
     }
 

@@ -24,7 +24,7 @@ public class Visitas {
     @DecimalMin("0.0")
     private double importe;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "cliente")
     private Cliente cliente;
 

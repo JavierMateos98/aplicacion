@@ -11,4 +11,28 @@ public class Pagos {
     private String factura;
 
     private String estado;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getFactura() {
+        return factura;
+    }
+
+    public void setFactura(String factura) {
+        this.factura = factura;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 }

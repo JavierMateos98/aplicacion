@@ -33,6 +33,8 @@ public class ClienteService {
         return clienteRepository.findByDireccion_Provincia(provincia);
     }
 
-
+    public void eliminar(Cliente cliente){
+        clienteRepository.delete(cliente);
+    }
 
 }
