@@ -7,10 +7,12 @@ For further reference, please consider the following sections:
 * [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.3.6.RELEASE/maven-plugin/reference/html/)
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.3.6.RELEASE/maven-plugin/reference/html/#build-image)
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/2.4.0/reference/htmlsingle/#production-ready)
+* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.4.0/reference/htmlsingle/#boot-features-jpa-and-spring-data)
 
 ### Guides
 The following guides illustrate how to use some features concretely:
 
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 * [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 

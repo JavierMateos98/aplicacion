@@ -9,16 +9,92 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5abc4cdd-7c39-4ffd-a8c2-5765087ac6a6" name="Default Changelist" comment="Creacion cliente">
+    <list default="true" id="7c16d0aa-9f7c-4605-b1df-8ff3b4d518a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/repositories/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aplicacion_domains_0_0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_54_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_0_9_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_4_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_reactivestreams_4_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_3_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_reactive_2_3_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_3_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_3_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_3_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_2_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cliente.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cliente.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/ClienteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/ClienteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/ClienteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/ClienteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/controller/ClienteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/controller/DireccionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/repositories/ClienteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/repositories/DireccionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/service/ClienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cliente/cliente/service/DireccionService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cliente/cliente/ClienteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/aplicacion/cliente/ClienteApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cliente/cliente/ClienteApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cliente-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cliente-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.cliente.cliente.ClienteApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.cliente.cliente.ClienteApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cliente/cliente/ClienteApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/src/main/java/com/aplicacion/domains/DomainsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/src/main/java/com/aplicacion/domains/domains/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/src/main/java/com/aplicacion/domains/domains/Direccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/src/main/java/com/aplicacion/domains/domains/Facturas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/src/main/java/com/aplicacion/domains/domains/Pagos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/src/main/java/com/aplicacion/domains/domains/Visitas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domains/src/test/java/com/aplicacion/domains/DomainsApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +119,8 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1konN5FGgx1nmQgRW4qMEXKPlic" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="1kpFUJvStCyTXCu3Gwz7YG2jTJR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,7 +133,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../domains" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../visita" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -75,7 +152,7 @@
     </configuration>
     <configuration name="ClienteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cliente" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cliente.cliente.ClienteApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aplicacion.cliente.ClienteApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,23 +161,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5abc4cdd-7c39-4ffd-a8c2-5765087ac6a6" name="Default Changelist" comment="" />
-      <created>1606375770495</created>
+      <changelist id="7c16d0aa-9f7c-4605-b1df-8ff3b4d518a8" name="Default Changelist" comment="" />
+      <created>1606389641618</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606375770495</updated>
-      <workItem from="1606375771628" duration="3911000" />
-      <workItem from="1606379961132" duration="327000" />
-      <workItem from="1606380311278" duration="3310000" />
+      <updated>1606389641618</updated>
+      <workItem from="1606389642731" duration="3932000" />
     </task>
-    <task id="LOCAL-00001" summary="Creacion cliente">
-      <created>1606376333074</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1606376333074</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,68 +183,67 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creacion cliente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion cliente" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="285" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1606379419858">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606392992216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="285" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606379419858" />
-    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606381302051">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606392992216" />
+    <state x="1220" y="274" key="FileChooserDialogImpl" timestamp="1606393008608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606381302051" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1606380338620">
+    <state x="1220" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606393008608" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606392985706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606380338620" />
-    <state width="1877" height="360" key="GridCell.Tab.0.bottom" timestamp="1606383094534">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606392985706" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606392985706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606383094534" />
-    <state width="1877" height="360" key="GridCell.Tab.0.center" timestamp="1606383094534">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606392985706" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606392985706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="360" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606383094534" />
-    <state width="1877" height="360" key="GridCell.Tab.0.left" timestamp="1606383094534">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606392985706" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606392985706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="360" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606383094534" />
-    <state width="1877" height="360" key="GridCell.Tab.0.right" timestamp="1606383094534">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606392985706" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1606392985706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="360" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606383094534" />
-    <state width="457" height="360" key="GridCell.Tab.1.bottom" timestamp="1606378431963">
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606392985706" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1606392985706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="457" height="360" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606378431963" />
-    <state width="457" height="360" key="GridCell.Tab.1.center" timestamp="1606378431963">
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606392985706" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1606392985706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="457" height="360" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606378431963" />
-    <state width="457" height="360" key="GridCell.Tab.1.left" timestamp="1606378431963">
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606392985706" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1606392985706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="457" height="360" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606378431963" />
-    <state width="457" height="360" key="GridCell.Tab.1.right" timestamp="1606378431963">
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606392985706" />
+    <state width="1877" height="347" key="GridCell.Tab.2.bottom" timestamp="1606389905105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="457" height="360" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606378431963" />
-    <state x="10" y="178" key="Maven.ArtifactSearchDialog" timestamp="1606381901793">
+    <state width="1877" height="347" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606389905105" />
+    <state width="1877" height="347" key="GridCell.Tab.2.center" timestamp="1606389905105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="10" y="178" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606381901793" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606376366100">
+    <state width="1877" height="347" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606389905105" />
+    <state width="1877" height="347" key="GridCell.Tab.2.left" timestamp="1606389905105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606376366100" />
-    <state x="342" y="180" key="new project wizard" timestamp="1606379564943">
+    <state width="1877" height="347" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606389905105" />
+    <state width="1877" height="347" key="GridCell.Tab.2.right" timestamp="1606389905105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="180" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1606379564943" />
+    <state width="1877" height="347" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606389905105" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1606390616958">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606390616958" />
   </component>
 </project>

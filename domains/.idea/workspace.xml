@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5373dd57-d99d-4b52-89ce-232e5b969fdd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../cliente/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/cliente.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/cliente.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/ClienteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/ClienteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/controller/DireccionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/repositories/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/repositories/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/repositories/DireccionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/src/main/java/com/cliente/cliente/service/DireccionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/classes/com/cliente/cliente/ClienteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/target/classes/com/cliente/cliente/ClienteApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/cliente-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/cliente-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/surefire-reports/TEST-com.cliente.cliente.ClienteApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/target/surefire-reports/TEST-com.cliente.cliente.ClienteApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cliente/target/surefire-reports/com.cliente.cliente.ClienteApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/target/surefire-reports/com.cliente.cliente.ClienteApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/domains/DomainsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/domains/domains/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/domains/domains/Direccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/domains/domains/Facturas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/domains/domains/Pagos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/domains/domains/Visitas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/aplicacion/domains/DomainsApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\Javi\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kowde7ABVBfrPlmwtSEoYvrVPH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../domainsMysql" />
+  </component>
+  <component name="RunManager">
+    <configuration name="DomainsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="entidades" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aplicacion.domains.DomainsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5373dd57-d99d-4b52-89ce-232e5b969fdd" name="Default Changelist" comment="" />
+      <created>1606380342243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606380342243</updated>
+      <workItem from="1606380343571" duration="3164000" />
+      <workItem from="1606384051048" duration="727000" />
+      <workItem from="1606386068676" duration="1015000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="285" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1606386087455">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="285" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606386087455" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1606388408175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606388408175" />
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom" timestamp="1606388410660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606388410660" />
+    <state width="1877" height="286" key="GridCell.Tab.0.center" timestamp="1606388410660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606388410660" />
+    <state width="1877" height="286" key="GridCell.Tab.0.left" timestamp="1606388410660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606388410660" />
+    <state width="1877" height="286" key="GridCell.Tab.0.right" timestamp="1606388410660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606388410660" />
+    <state width="1877" height="286" key="GridCell.Tab.1.bottom" timestamp="1606386135183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606386135183" />
+    <state width="1877" height="286" key="GridCell.Tab.1.center" timestamp="1606386135183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606386135183" />
+    <state width="1877" height="286" key="GridCell.Tab.1.left" timestamp="1606386135183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606386135183" />
+    <state width="1877" height="286" key="GridCell.Tab.1.right" timestamp="1606386135183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606386135183" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1606384423607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606384423607" />
+  </component>
+</project>
