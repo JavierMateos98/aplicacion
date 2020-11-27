@@ -20,7 +20,7 @@ public class Cliente {
     private Direccion direccion;
 
     @Column(name = "estado_cliente")
-    private String estado;
+    private String estado_cliente;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "cliente")
     @JsonIgnore
@@ -35,11 +35,11 @@ public class Cliente {
     }
 
     public String getEstado() {
-        return estado;
+        return estado_cliente;
     }
 
     public void setEstado(String estado) {
-        this.estado = estado;
+        this.estado_cliente = estado;
     }
 
     public int getId() {

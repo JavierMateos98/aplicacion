@@ -1,9 +1,10 @@
-package com.aplicacion.domains.domains;
+package com.aplicacion.cliente.domains;
 
-import com.aplicacion.cliente.domains.Cliente;
-import com.aplicacion.cliente.domains.Visitas;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.Date;
+import java.util.List;
 
 @Document("Facturas")
 public class Facturas {
@@ -12,15 +13,23 @@ public class Facturas {
 
     private String fecha;
 
-    private String cuantia;
+    private double cuantia;
 
     private int forma_pago;
 
-    private Visitas visita;
+    private Visitas[] visita;
 
     private Cliente cliente;
 
-    private String estado_factura;
+    private String estado;
+
+    public Visitas[] getVisita() {
+        return visita;
+    }
+
+    public void setVisita(Visitas[] visita) {
+        this.visita = visita;
+    }
 
     public int getForma_pago() {
         return forma_pago;
@@ -30,20 +39,12 @@ public class Facturas {
         this.forma_pago = forma_pago;
     }
 
-    public String getEstado_factura() {
-        return estado_factura;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setEstado_factura(String estado_factura) {
-        this.estado_factura = estado_factura;
-    }
-
-    public Visitas getVisita() {
-        return visita;
-    }
-
-    public void setVisita(Visitas visita) {
-        this.visita = visita;
+    public void setEstado(String estado_factura) {
+        this.estado = estado_factura;
     }
 
     public String getId() {
@@ -62,11 +63,11 @@ public class Facturas {
         this.fecha = fecha;
     }
 
-    public String getCuantia() {
+    public double getCuantia() {
         return cuantia;
     }
 
-    public void setCuantia(String cuantia) {
+    public void setCuantia(double cuantia) {
         this.cuantia = cuantia;
     }
 
@@ -77,4 +78,6 @@ public class Facturas {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
+
 }

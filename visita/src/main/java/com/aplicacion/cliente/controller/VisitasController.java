@@ -36,7 +36,7 @@ public class VisitasController {
 
     @PostMapping("/buscarcliente")
     public ResponseEntity<?> buscarCliente(@RequestBody Cliente cliente){
-        List<Visitas> visitas = visitaService.buscarCliente(cliente);
+        Visitas[] visitas = visitaService.buscarCliente(cliente);
 
         if(visitas != null){
             return new ResponseEntity<>(visitas, HttpStatus.OK);

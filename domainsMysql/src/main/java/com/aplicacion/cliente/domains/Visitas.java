@@ -1,5 +1,6 @@
 package com.aplicacion.cliente.domains;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -26,6 +27,7 @@ public class Visitas {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "cliente")
+    @JsonIgnore
     private Cliente cliente;
 
     @Column(name = "estado")

@@ -12,7 +12,7 @@ public interface VisitaRepository extends Repository<Visitas, Integer> {
 
     Visitas findById(int id);
 
-    List<Visitas> findByCliente(Cliente cliente);
+    Visitas[] findByCliente(Cliente cliente);
 
     List<Visitas> findByEstado(String estado);
 

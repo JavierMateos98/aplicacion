@@ -22,7 +22,7 @@ public class VisitaService {
         return visitaRepository.findByEstado(estado);
     }
 
-    public List<Visitas> buscarCliente(Cliente cliente){
+    public Visitas[] buscarCliente(Cliente cliente){
         return visitaRepository.findByCliente(cliente);
     }
 

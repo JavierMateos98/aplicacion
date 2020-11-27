@@ -1,4 +1,4 @@
-package com.aplicacion.domains.domains;
+package com.aplicacion.cliente.domains;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -8,9 +8,9 @@ public class Pagos {
 
     private @Id String id;
 
-    private String factura;
+    private Facturas factura;
 
-    private String estado;
+    private String estado_pago;
 
     public String getId() {
         return id;
@@ -20,19 +20,19 @@ public class Pagos {
         this.id = id;
     }
 
-    public String getFactura() {
+    public Facturas getFactura() {
         return factura;
     }
 
-    public void setFactura(String factura) {
+    public void setFactura(Facturas factura) {
         this.factura = factura;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getEstado_pago() {
+        return estado_pago;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setEstado_pago(String estado_pago) {
+        this.estado_pago = estado_pago;
     }
 }

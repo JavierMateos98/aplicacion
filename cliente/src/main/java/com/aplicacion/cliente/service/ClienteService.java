@@ -2,7 +2,9 @@ package com.aplicacion.cliente.service;
 
 import com.aplicacion.cliente.repositories.ClienteRepository;
 import com.aplicacion.cliente.domains.Cliente;
+import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +14,10 @@ public class ClienteService {
 
     @Autowired
     private ClienteRepository clienteRepository;
+
+    @Qualifier("eurekaClient")
+    @Autowired
+    private EurekaClient eurekaClient;
 
     public Cliente guardar(Cliente cliente){
         return clienteRepository.save(cliente);

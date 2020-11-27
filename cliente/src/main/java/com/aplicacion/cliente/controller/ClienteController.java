@@ -2,9 +2,7 @@ package com.aplicacion.cliente.controller;
 
 import com.aplicacion.cliente.service.ClienteService;
 import com.aplicacion.cliente.domains.Cliente;
-import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,9 +16,10 @@ public class ClienteController {
     @Autowired
     ClienteService clienteService;
 
-    @Qualifier("eurekaClient")
-    @Autowired
-    private EurekaClient eurekaClient;
+    @GetMapping("/buscar/{nombre}")
+    public Cliente buscarClientePagos(@PathVariable("nombre") String nombre){
+        return clienteService.buscarNombre(nombre);
+    }
 
     @GetMapping("/provincia/{provincia}")
     public ResponseEntity<?> buscarProvincia(@PathVariable("provincia") String provincia){
@@ -31,6 +30,11 @@ public class ClienteController {
         } else {
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
         }
+    }
+
+    @PostMapping("/nuevo")
+    public Cliente crear(@RequestBody Cliente cliente){
+        return clienteService.guardar(cliente);
     }
 
     @GetMapping("/listar")
