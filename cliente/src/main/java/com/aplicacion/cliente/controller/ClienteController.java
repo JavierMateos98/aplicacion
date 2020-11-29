@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -37,6 +38,44 @@ public class ClienteController {
         }
     }
 
+    @GetMapping("/buscarnombre/{nombre}")
+    public ResponseEntity<?> buscarCliente(@PathVariable("nombre") String nombre){
+
+        Cliente clientes = clienteService.buscarNombre(nombre);
+
+        if(clientes != null){
+            return new ResponseEntity<>(clientes, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PostMapping("buscarestado/")
+    public ResponseEntity<?> buscarClienteEstado(@RequestBody ClienteDTO clienteD){
+
+        List<Cliente> clientes = clienteService.buscarEstado(clienteD.getEstado_cliente());
+
+        ArrayList<ClienteDTO> clienteDTOS = new ArrayList<ClienteDTO>();
+
+        for(Cliente cliente: clientes){
+            ClienteDTO cliB = new ClienteDTO();
+
+            cliB.setId(cliente.getId());
+            cliB.setNombre(cliente.getNombre());
+            cliB.setDireccion(cliente.getDireccion().getDireccion());
+            cliB.setProvincia(cliente.getDireccion().getProvincia());
+            cliB.setEstado_cliente(cliente.getEstado());
+
+            clienteDTOS.add(cliB);
+        }
+
+        if(clienteDTOS != null){
+            return new ResponseEntity<>(clienteDTOS, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+        }
+    }
+
     @GetMapping("/provincia/{provincia}")
     public ResponseEntity<?> buscarProvincia(@PathVariable("provincia") String provincia){
         List<Cliente> clientes = clienteService.buscarDireccion(provincia);
@@ -53,6 +92,11 @@ public class ClienteController {
         return clienteService.guardar(cliente);
     }
 
+    @PutMapping("/actualizar")
+    public Cliente actualizar(@RequestBody Cliente cliente){
+        return clienteService.actualizar(cliente);
+    }
+
     @GetMapping("/listar")
     public ResponseEntity<?> listarClientes(){
 
@@ -63,7 +107,6 @@ public class ClienteController {
         } else {
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
         }
-
     }
 
     @DeleteMapping("/eliminar/{id}")

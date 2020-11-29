@@ -12,6 +12,8 @@ public interface VisitaRepository extends Repository<Visitas, Integer> {
 
     Visitas findById(int id);
 
+    void deleteById(int id);
+
     Visitas findByCliente_Nombre(String cliente);
 
     List<Visitas> findByEstado(String estado);

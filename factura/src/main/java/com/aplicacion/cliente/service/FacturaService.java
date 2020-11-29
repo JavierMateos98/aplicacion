@@ -78,8 +78,15 @@ public class FacturaService {
         return facturaRepository.findByClienteid(buscarCliente(nombre));
     }
 
+    public List<Facturas> buscarClientePago(int id){
+        return facturaRepository.findByClienteid(id);
+    }
+
     public List<Facturas> buscarImporte(Double importe){
         return facturaRepository.findByCuantia(importe);
     }
 
+    public void eliminar(Facturas facturas){
+        facturaRepository.delete(facturas);
+    }
 }

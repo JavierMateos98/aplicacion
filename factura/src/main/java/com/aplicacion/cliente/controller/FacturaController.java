@@ -40,6 +40,17 @@ public class FacturaController {
         }
     }
 
+    @GetMapping("/buscarIdPago/{id}")
+    public ResponseEntity<?> buscarFacturasPago(@PathVariable("id") int id){
+        List<Facturas> listafacturas = facturaService.buscarClientePago(id);
+
+        if(listafacturas != null){
+            return new ResponseEntity<>(listafacturas, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
     @PostMapping("/guardar/{nombre}")
     public ResponseEntity<?> guardarFactura(@RequestBody Facturas factura, @PathVariable("nombre") String nombre){
         Facturas fact = facturaService.guardar(factura, nombre);
@@ -75,18 +86,9 @@ public class FacturaController {
 
     }
 
-    /*
-    @PostMapping("/buscarcliente")
-    public ResponseEntity<?> buscarCliente(@RequestBody Cliente cliente){
-        List<Facturas> facturas = facturaService.buscarCliente(cliente);
-
-        if(facturas != null){
-            return new ResponseEntity<>(facturas, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+    @DeleteMapping("/eliminar/{id}")
+    public void eliminarFactura(@PathVariable("id") String id){
+        facturaService.eliminar(facturaService.buscarFactura(id));
     }
-
-     */
 
 }

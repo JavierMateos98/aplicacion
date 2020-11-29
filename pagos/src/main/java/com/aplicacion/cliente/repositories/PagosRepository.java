@@ -1,20 +1,17 @@
 package com.aplicacion.cliente.repositories;
 
-import com.aplicacion.cliente.domains.ClienteDTO;
-import com.aplicacion.cliente.domains.Facturas;
 import com.aplicacion.cliente.domains.Pagos;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.repository.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface PagosRepository extends MongoRepository<Pagos, String> {
 
-    /*
     List<Pagos> findByEstadopago(String estado);
 
-    List<Pagos> findByFactura(Facturas facturas);
+    List<Pagos> findByFacturaid(String facturaid);
 
-     */
+    Optional<Pagos> findById(String id);
 
 }

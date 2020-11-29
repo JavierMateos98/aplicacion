@@ -19,6 +19,14 @@ public class ClienteService {
         return clienteRepository.save(cliente);
     }
 
+    public Cliente actualizar(Cliente cliente){
+        Cliente cli = listarCliente(cliente.getId());
+
+        cliente.setId(cli.getId());
+
+        return clienteRepository.save(cliente);
+    }
+
     public List<Cliente> listarClientes(){
         return clienteRepository.findAll();
     }
@@ -33,6 +41,10 @@ public class ClienteService {
 
     public List<Cliente> buscarDireccion(String provincia){
         return clienteRepository.findByDireccion_Provincia(provincia);
+    }
+
+    public List<Cliente> buscarEstado(String estado){
+        return clienteRepository.findByEstadocliente(estado);
     }
 
     public void eliminar(Cliente cliente){

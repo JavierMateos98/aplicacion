@@ -20,4 +20,6 @@ public interface FacturaRepository extends MongoRepository<Facturas, String> {
 
     List<Facturas> findByCuantia(double cuantia);
 
+    void delete(Facturas facturas);
+
 }

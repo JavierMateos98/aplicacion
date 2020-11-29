@@ -21,6 +21,11 @@ public class VisitasController {
     @Autowired
     VisitaService visitaService;
 
+    @DeleteMapping("/eliminar/{id}")
+    public void eliminar(@PathVariable("id") int id){
+        visitaService.eliminar(id);
+    }
+
     @GetMapping("/buscarestado/{estado}")
     public ResponseEntity<?> buscarEstado(@PathVariable("estado") String estado){
         List<Visitas> visitas = visitaService.buscarEstado(estado);
@@ -42,13 +47,17 @@ public class VisitasController {
         visitaB.setFecha(visitas.getFecha());
         visitaB.setId(visitas.getId());
         visitaB.setImporte(visitas.getImporte());
-        //visitaB.setCliente(visitaService.buscarCliente(visitas.getCliente().getNombre()));
 
         if(visitaB != null){
             return new ResponseEntity<>(visitaB, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+    }
+
+    @PutMapping("/actualizar")
+    public Visitas actualizarVisita(@RequestBody Visitas visita){
+        return visitaService.actualizar(visita);
     }
 
     @PostMapping("/buscarclientevisita")

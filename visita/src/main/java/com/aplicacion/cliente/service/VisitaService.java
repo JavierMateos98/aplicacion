@@ -9,6 +9,8 @@ import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Application;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -39,6 +41,28 @@ public class VisitaService {
 
     public Visitas guardar(Visitas visitas){
         return visitaRepository.save(visitas);
+    }
+
+    public void eliminar(int visita){
+        visitaRepository.deleteById(visita);
+    }
+
+    public Visitas buscarVisita(int id){
+        return visitaRepository.findById(id);
+    }
+
+    public Visitas actualizar(Visitas visita){
+        if(buscarVisita(visita.getId()).getEstado() == "Agendadas"){
+            Visitas visitas = buscarVisita(visita.getId());
+
+            visita.setCliente(visitas.getCliente());
+            visita.setId(visitas.getId());
+
+            return visitaRepository.save(visita);
+        } else {
+            return null;
+        }
+
     }
 
     public List<Visitas> buscarEstado(String estado){

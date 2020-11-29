@@ -18,6 +18,8 @@ public interface ClienteRepository extends Repository<Cliente, Integer> {
 
     List<Cliente> findAll();
 
+    List<Cliente> findByEstadocliente(String estado);
+
     void delete(Cliente cliente);
 
 }
