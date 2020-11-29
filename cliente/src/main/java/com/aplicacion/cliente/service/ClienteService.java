@@ -15,10 +15,6 @@ public class ClienteService {
     @Autowired
     private ClienteRepository clienteRepository;
 
-    @Qualifier("eurekaClient")
-    @Autowired
-    private EurekaClient eurekaClient;
-
     public Cliente guardar(Cliente cliente){
         return clienteRepository.save(cliente);
     }

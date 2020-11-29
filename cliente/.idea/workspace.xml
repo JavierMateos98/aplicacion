@@ -23,23 +23,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c16d0aa-9f7c-4605-b1df-8ff3b4d518a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/repositories/FacturaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/service/FacturaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cliente.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/repositories/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/repositories/ClienteRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aplicacion/cliente/service/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/domains/DomainsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/cliente/DomainsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/domains/domains/Facturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/cliente/domains/Facturas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/domains/domains/Pagos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/cliente/domains/Pagos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../domainsMongo/src/test/java/com/aplicacion/domains/DomainsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMongo/src/test/java/com/aplicacion/cliente/DomainsApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../domainsMysql/src/main/java/com/aplicacion/cliente/domains/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMysql/src/main/java/com/aplicacion/cliente/domains/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../domainsMysql/src/main/java/com/aplicacion/cliente/domains/Visitas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMysql/src/main/java/com/aplicacion/cliente/domains/Visitas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/domainDTO.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/src/main/java/ClienteDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/src/main/java/DireccionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/src/main/java/FacturasDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/src/main/java/PagosDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainDTO/src/main/java/VisitasDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainsMongo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMongo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/cliente/domains/Facturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/cliente/domains/Facturas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/cliente/domains/Pagos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMongo/src/main/java/com/aplicacion/cliente/domains/Pagos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainsMongo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMongo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainsMongo/src/test/java/com/aplicacion/cliente/DomainsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainsMysql/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../domainsMysql/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../factura/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../factura/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/controller/VisitasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/controller/FacturaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/repositories/VisitaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/service/VisitaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../factura/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../factura/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/controller/FacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/controller/FacturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/repositories/FacturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/repositories/FacturaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/service/FacturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../factura/src/main/java/com/aplicacion/cliente/service/FacturaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pagos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pagos/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pagos/src/main/java/com/aplicacion/cliente/controller/PagosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pagos/src/main/java/com/aplicacion/cliente/controller/PagosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pagos/src/main/java/com/aplicacion/cliente/repositories/PagosRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pagos/src/main/java/com/aplicacion/cliente/repositories/PagosRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pagos/src/main/java/com/aplicacion/cliente/service/PagosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pagos/src/main/java/com/aplicacion/cliente/service/PagosService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../visita/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../visita/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../visita/src/main/java/com/aplicacion/cliente/controller/VisitasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../visita/src/main/java/com/aplicacion/cliente/controller/VisitasController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../visita/src/main/java/com/aplicacion/cliente/repositories/VisitaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../visita/src/main/java/com/aplicacion/cliente/repositories/VisitaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../visita/src/main/java/com/aplicacion/cliente/service/VisitaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../visita/src/main/java/com/aplicacion/cliente/service/VisitaService.java" afterDir="false" />
@@ -81,7 +96,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../domainsMysql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -108,6 +123,10 @@
       <workItem from="1606410460830" duration="3959000" />
       <workItem from="1606468310249" duration="7330000" />
       <workItem from="1606477789885" duration="161000" />
+      <workItem from="1606488728737" duration="1172000" />
+      <workItem from="1606559632248" duration="5054000" />
+      <workItem from="1606579674478" duration="3060000" />
+      <workItem from="1606649753011" duration="295000" />
     </task>
     <servers />
   </component>
@@ -131,42 +150,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606392992216" />
-    <state x="1220" y="274" key="FileChooserDialogImpl" timestamp="1606476092471">
+    <state x="1220" y="274" key="FileChooserDialogImpl" timestamp="1606580832785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606476092471" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606477962517">
+    <state x="1220" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606580832785" />
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1606584615168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606477962517" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606477962517">
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606584615168" />
+    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1606584615168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606477962517" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606477962517">
+    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606584615168" />
+    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1606584615168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606477962517" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606477962517">
+    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606584615168" />
+    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1606584615168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606477962517" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1606477962517">
+    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606584615168" />
+    <state width="1877" height="279" key="GridCell.Tab.1.bottom" timestamp="1606584615169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606477962517" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1606477962517">
+    <state width="1877" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606584615169" />
+    <state width="1877" height="279" key="GridCell.Tab.1.center" timestamp="1606584615168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606477962517" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1606477962517">
+    <state width="1877" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606584615168" />
+    <state width="1877" height="279" key="GridCell.Tab.1.left" timestamp="1606584615168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606477962517" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1606477962517">
+    <state width="1877" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606584615168" />
+    <state width="1877" height="279" key="GridCell.Tab.1.right" timestamp="1606584615169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606477962517" />
+    <state width="1877" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606584615169" />
     <state width="1877" height="347" key="GridCell.Tab.2.bottom" timestamp="1606472150591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

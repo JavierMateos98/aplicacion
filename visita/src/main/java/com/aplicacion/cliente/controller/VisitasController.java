@@ -1,7 +1,9 @@
 package com.aplicacion.cliente.controller;
 
 import com.aplicacion.cliente.domains.Cliente;
+import com.aplicacion.cliente.domains.ClienteDTO;
 import com.aplicacion.cliente.domains.Visitas;
+import com.aplicacion.cliente.domains.VisitasDTO;
 import com.aplicacion.cliente.service.VisitaService;
 import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,10 +21,6 @@ public class VisitasController {
     @Autowired
     VisitaService visitaService;
 
-    @Qualifier("eurekaClient")
-    @Autowired
-    private EurekaClient eurekaClient;
-
     @GetMapping("/buscarestado/{estado}")
     public ResponseEntity<?> buscarEstado(@PathVariable("estado") String estado){
         List<Visitas> visitas = visitaService.buscarEstado(estado);
@@ -34,9 +32,28 @@ public class VisitasController {
         }
     }
 
-    @PostMapping("/buscarcliente")
-    public ResponseEntity<?> buscarCliente(@RequestBody Cliente cliente){
-        Visitas[] visitas = visitaService.buscarCliente(cliente);
+    @GetMapping("/buscarcliente/{nombre}")
+    public ResponseEntity<?> buscarCliente(@PathVariable("nombre") String nombre){
+        Visitas visitas = visitaService.buscarVisitaCliente(nombre);
+
+        VisitasDTO visitaB = new VisitasDTO();
+
+        visitaB.setEstado(visitas.getEstado());
+        visitaB.setFecha(visitas.getFecha());
+        visitaB.setId(visitas.getId());
+        visitaB.setImporte(visitas.getImporte());
+        //visitaB.setCliente(visitaService.buscarCliente(visitas.getCliente().getNombre()));
+
+        if(visitaB != null){
+            return new ResponseEntity<>(visitaB, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PostMapping("/buscarclientevisita")
+    public ResponseEntity<?> buscarClienteVisita(@RequestBody Visitas visita){
+        Visitas visitas = visitaService.guardar(visita);
 
         if(visitas != null){
             return new ResponseEntity<>(visitas, HttpStatus.OK);

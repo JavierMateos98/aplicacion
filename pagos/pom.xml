@@ -23,7 +23,7 @@
 
 		<dependency>
 			<groupId>com.aplicacion</groupId>
-			<artifactId>domainsMysql</artifactId>
+			<artifactId>entitiesDTO</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 

@@ -1,9 +1,7 @@
 package com.aplicacion.cliente.service;
 
-import com.aplicacion.cliente.domains.Cliente;
-import com.aplicacion.cliente.domains.Visitas;
+import com.aplicacion.cliente.domains.*;
 import com.aplicacion.cliente.repositories.FacturaRepository;
-import com.aplicacion.cliente.domains.Facturas;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Application;
@@ -25,7 +23,7 @@ public class FacturaService {
     @Autowired
     private EurekaClient eurekaClient;
 
-    public Cliente buscarCliente(String nombre){
+    public int buscarCliente(String nombre){
         Application app = eurekaClient.getApplication("discovery-cliente");
 
         List<InstanceInfo> lista = app.getInstances();
@@ -34,11 +32,11 @@ public class FacturaService {
 
         String fooResourceUrl = lista.get(0).getHomePageUrl();
 
-        return restTemplate.getForEntity(fooResourceUrl + "cliente/buscar/" + nombre, Cliente.class).getBody();
+        return restTemplate.getForEntity(fooResourceUrl + "cliente/buscar/" + nombre, ClienteDTO.class).getBody().getId();
 
     }
 
-    public Visitas[] buscarVisita(Cliente cliente){
+    public VisitasDTO buscarVisita(String cliente){
         Application app = eurekaClient.getApplication("discovery-visitas");
 
         List<InstanceInfo> lista = app.getInstances();
@@ -47,7 +45,7 @@ public class FacturaService {
 
         String fooResourceUrl = lista.get(0).getHomePageUrl();
 
-        return restTemplate.postForObject(fooResourceUrl + "visitas/buscarcliente", cliente, Visitas[].class);
+        return restTemplate.getForObject(fooResourceUrl + "visitas/buscarcliente/" + cliente, VisitasDTO.class);
 
     }
 
@@ -55,16 +53,33 @@ public class FacturaService {
         return facturaRepository.findById(id).get();
     }
 
-    public Facturas guardar(Facturas factura){
-        factura.setCliente(buscarCliente(factura.getCliente().getNombre()));
+    public Facturas guardar(Facturas factura, String nombre){
+        factura.setClienteid(buscarCliente(nombre));
 
-        factura.setVisita(buscarVisita(factura.getCliente()));
+        LineaFactura lineaFactura = new LineaFactura();
+
+        VisitasDTO visita = buscarVisita(nombre);
+
+        lineaFactura.setId(visita.getId());
+        lineaFactura.setEstado(visita.getEstado());
+        lineaFactura.setFecha(visita.getFecha().toString());
+        lineaFactura.setImporte(visita.getImporte());
+
+        factura.setLineaFactura(lineaFactura);
 
         return facturaRepository.insert(factura);
     }
 
     public List<Facturas> buscarEstado(String estado){
         return facturaRepository.findByEstado(estado);
+    }
+
+    public List<Facturas> buscarClienteFact(String nombre){
+        return facturaRepository.findByClienteid(buscarCliente(nombre));
+    }
+
+    public List<Facturas> buscarImporte(Double importe){
+        return facturaRepository.findByCuantia(importe);
     }
 
 }

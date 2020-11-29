@@ -3,9 +3,6 @@ package com.aplicacion.cliente.domains;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
-import java.util.List;
-
 @Document("Facturas")
 public class Facturas {
 
@@ -17,35 +14,11 @@ public class Facturas {
 
     private int forma_pago;
 
-    private Visitas[] visita;
+    private LineaFactura lineaFactura;
 
-    private Cliente cliente;
+    private int clienteid;
 
     private String estado;
-
-    public Visitas[] getVisita() {
-        return visita;
-    }
-
-    public void setVisita(Visitas[] visita) {
-        this.visita = visita;
-    }
-
-    public int getForma_pago() {
-        return forma_pago;
-    }
-
-    public void setForma_pago(int forma_pago) {
-        this.forma_pago = forma_pago;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado_factura) {
-        this.estado = estado_factura;
-    }
 
     public String getId() {
         return id;
@@ -71,13 +44,35 @@ public class Facturas {
         this.cuantia = cuantia;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public int getForma_pago() {
+        return forma_pago;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
+    public void setForma_pago(int forma_pago) {
+        this.forma_pago = forma_pago;
     }
 
+    public LineaFactura getLineaFactura() {
+        return lineaFactura;
+    }
 
+    public void setLineaFactura(LineaFactura lineaFactura) {
+        this.lineaFactura = lineaFactura;
+    }
+
+    public int getClienteid() {
+        return clienteid;
+    }
+
+    public void setClienteid(int clienteid) {
+        this.clienteid = clienteid;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 }

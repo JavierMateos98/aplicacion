@@ -8,9 +8,19 @@ public class Pagos {
 
     private @Id String id;
 
-    private Facturas factura;
+    private String facturaid;
 
-    private String estado_pago;
+    private double cantidad;
+
+    private String estadopago;
+
+    public double getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(double cantidad) {
+        this.cantidad = cantidad;
+    }
 
     public String getId() {
         return id;
@@ -20,19 +30,19 @@ public class Pagos {
         this.id = id;
     }
 
-    public Facturas getFactura() {
-        return factura;
+    public String getFacturaid() {
+        return facturaid;
     }
 
-    public void setFactura(Facturas factura) {
-        this.factura = factura;
+    public void setFacturaid(String facturaid) {
+        this.facturaid = facturaid;
     }
 
-    public String getEstado_pago() {
-        return estado_pago;
+    public String getEstadopago() {
+        return estadopago;
     }
 
-    public void setEstado_pago(String estado_pago) {
-        this.estado_pago = estado_pago;
+    public void setEstadopago(String estadopago) {
+        this.estadopago = estadopago;
     }
 }

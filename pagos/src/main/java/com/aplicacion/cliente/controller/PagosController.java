@@ -1,6 +1,6 @@
 package com.aplicacion.cliente.controller;
 
-import com.aplicacion.cliente.domains.Cliente;
+import com.aplicacion.cliente.domains.ClienteDTO;
 import com.aplicacion.cliente.domains.Pagos;
 import com.aplicacion.cliente.service.PagosService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,20 +26,6 @@ public class PagosController {
         }else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-    }
-
-    @PostMapping("/buscarcliente")
-    public ResponseEntity<?> buscarCliente(@RequestBody Cliente cliente){
-        //List<Facturas> facturas = pagosService.buscarCliente(cliente);
-/*
-        if(facturas != null){
-            return new ResponseEntity<>(facturas, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-
- */
-        return null;
     }
 
 }

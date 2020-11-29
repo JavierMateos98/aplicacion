@@ -16,4 +16,8 @@ public interface FacturaRepository extends MongoRepository<Facturas, String> {
 
     List<Facturas> findByEstado(String estado);
 
+    List<Facturas> findByClienteid(int clienteid);
+
+    List<Facturas> findByCuantia(double cuantia);
+
 }

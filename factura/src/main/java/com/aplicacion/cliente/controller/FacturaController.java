@@ -1,6 +1,5 @@
 package com.aplicacion.cliente.controller;
 
-import com.aplicacion.cliente.domains.Cliente;
 import com.aplicacion.cliente.service.FacturaService;
 import com.aplicacion.cliente.domains.Facturas;
 import com.netflix.discovery.EurekaClient;
@@ -18,10 +17,6 @@ public class FacturaController {
 
     @Autowired
     FacturaService facturaService;
-
-    @Qualifier("eurekaClient")
-    @Autowired
-    private EurekaClient eurekaClient;
 
     @GetMapping("/buscar/{estado}")
     public ResponseEntity<?> buscarEstado(@PathVariable("estado") String estado){
@@ -45,12 +40,35 @@ public class FacturaController {
         }
     }
 
-    @PostMapping("/guardar")
-    public ResponseEntity<?> guardarFactura(@RequestBody Facturas factura){
-        Facturas fact = facturaService.guardar(factura);
+    @PostMapping("/guardar/{nombre}")
+    public ResponseEntity<?> guardarFactura(@RequestBody Facturas factura, @PathVariable("nombre") String nombre){
+        Facturas fact = facturaService.guardar(factura, nombre);
 
         if(fact != null){
             return new ResponseEntity<>(fact, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+        }
+
+    }
+
+    @GetMapping("/buscarcuantia/{importe}")
+    public ResponseEntity<?> buscarImporte(@PathVariable("importe") Double importe){
+        List<Facturas> facturas = facturaService.buscarImporte(importe);
+
+        if(facturas != null){
+            return new ResponseEntity<>(facturas, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @GetMapping("/listarfactcli/{nombre}")
+    public ResponseEntity<?> guardarFactura(@PathVariable("nombre") String nombre){
+        List<Facturas> facturas = facturaService.buscarClienteFact(nombre);
+
+        if(facturas != null){
+            return new ResponseEntity<>(facturas, HttpStatus.OK);
         } else {
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
         }

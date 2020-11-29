@@ -1,5 +1,6 @@
 package com.aplicacion.cliente.controller;
 
+import com.aplicacion.cliente.domains.ClienteDTO;
 import com.aplicacion.cliente.service.ClienteService;
 import com.aplicacion.cliente.domains.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,23 @@ public class ClienteController {
     ClienteService clienteService;
 
     @GetMapping("/buscar/{nombre}")
-    public Cliente buscarClientePagos(@PathVariable("nombre") String nombre){
-        return clienteService.buscarNombre(nombre);
+    public ResponseEntity<?> buscarClientePagos(@PathVariable("nombre") String nombre){
+
+        Cliente clientes = clienteService.buscarNombre(nombre);
+
+        ClienteDTO cliB = new ClienteDTO();
+
+        cliB.setId(clientes.getId());
+        cliB.setNombre(clientes.getNombre());
+        cliB.setDireccion(clientes.getDireccion().getDireccion());
+        cliB.setProvincia(clientes.getDireccion().getProvincia());
+        cliB.setEstado_cliente(clientes.getEstado());
+
+        if(cliB != null){
+            return new ResponseEntity<>(cliB, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+        }
     }
 
     @GetMapping("/provincia/{provincia}")
