@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "5424488f-e5fb-4bf7-b1f0-1edaae820201",
+		"name": "Microservicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buscar nombre - cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/cliente/buscar/Jaime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"cliente",
+						"buscar",
+						"Jaime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar estado - cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado_cliente\": \"Factura pendiente pago\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/cliente/buscarestado/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"cliente",
+						"buscarestado",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar cliente - visitas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/visitas/buscarcliente/Jaime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"visitas",
+						"buscarcliente",
+						"Jaime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar estado - visitas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/visitas/buscarestado/Agendada",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"visitas",
+						"buscarestado",
+						"Agendada"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar facturas de un cliente - facturas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/facturas/listarfactcli/Javier",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"facturas",
+						"listarfactcli",
+						"Javier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar estado - factura",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/facturas/buscar/Impagada",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"facturas",
+						"buscar",
+						"Impagada"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar cuantia - factura",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/facturas/buscarcuantia/200.5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"facturas",
+						"buscarcuantia",
+						"200.5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar los pagos de un cliente - Pagos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/pagos/listarFacturasCliente/Javier",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"pagos",
+						"listarFacturasCliente",
+						"Javier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar estado pago - pagos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/pagos/buscarestado/Impagado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"pagos",
+						"buscarestado",
+						"Impagado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar factura - pagos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/pagos/buscarfactura/5fc27bec0460467f9f5eef03",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"pagos",
+						"buscarfactura",
+						"5fc27bec0460467f9f5eef03"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar estado factura - pagos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/pagos/buscarEstadoFactura/No pagado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"pagos",
+						"buscarEstadoFactura",
+						"No pagado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar estado cliente - pagos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado_cliente\": \"Sin facturas pendientes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/pagos/buscarEstadoCliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"pagos",
+						"buscarEstadoCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado\": \"algo\",\r\n    \"nombre\": \"Javier\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/cliente/nuevo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"cliente",
+						"nuevo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear pago",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"facturaid\": \"5fc3bac1ff8a1a52db497ce0\",\r\n    \"cantidad\": 10,\r\n    \"estadopago\": \"Pagado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/pagos/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"pagos",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear factura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha\": \"2020-11-11\",\r\n    \"cuantia\": 200.50,\r\n    \"forma_pago\": 3,\r\n    \"cliente\": {\r\n        \"nombre\": \"Javier\"\r\n    },\r\n    \"estado\": \"No pagado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/facturas/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"facturas",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/visitas/eliminar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"visitas",
+						"eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar visita",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/cliente/eliminar/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"cliente",
+						"eliminar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar factura",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/facturas/eliminar/5fc3bac1ff8a1a52db497ce0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"facturas",
+						"eliminar",
+						"5fc3bac1ff8a1a52db497ce0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar pago",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/pagos/eliminar/5fc400266fe45f4fba2eeb8e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"pagos",
+						"eliminar",
+						"5fc400266fe45f4fba2eeb8e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar cliente - cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"estado\": \"algo\",\r\n    \"nombre\": \"Javier\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/cliente/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"cliente",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
