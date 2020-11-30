@@ -52,8 +52,10 @@ public class VisitaService {
     }
 
     public Visitas actualizar(Visitas visita){
-        if(buscarVisita(visita.getId()).getEstado() == "Agendadas"){
-            Visitas visitas = buscarVisita(visita.getId());
+
+        Visitas visitas = buscarVisita(visita.getId());
+
+        if(buscarVisita(visitas.getId()).getEstado() == "Agendadas"){
 
             visita.setCliente(visitas.getCliente());
             visita.setId(visitas.getId());
