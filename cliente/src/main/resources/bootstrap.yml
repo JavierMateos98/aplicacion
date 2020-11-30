@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: discovery-cliente
+  cloud:
+    config:
+      uri: http://localhost:8090

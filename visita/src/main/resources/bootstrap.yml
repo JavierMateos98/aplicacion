@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: discovery-visitas
+  cloud:
+    config:
+      uri: http://localhost:8090
