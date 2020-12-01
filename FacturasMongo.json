@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "5fc27bec0460467f9f5eef03"
+  },
+  "fecha": "2020-11-11",
+  "cuantia": 200.5,
+  "forma_pago": 3,
+  "lineaFactura": {
+    "_id": 1,
+    "fecha": "Wed Nov 11 01:00:00 CET 2020",
+    "importe": 20,
+    "estado": "Pendiente facturar"
+  },
+  "clienteid": 1,
+  "estado": "Pendiente pago",
+  "_class": "com.aplicacion.cliente.domains.Facturas"
+},{
+  "_id": {
+    "$oid": "5fc3fdaaa610b75809573133"
+  },
+  "fecha": "2020-12-12",
+  "cuantia": 200.5,
+  "forma_pago": 3,
+  "lineaFactura": {
+    "_id": 1,
+    "fecha": "Thu Nov 05 01:00:00 CET 2020",
+    "importe": 20.5,
+    "estado": "Pendiente facturar"
+  },
+  "clienteid": 2,
+  "estado": "Pagada",
+  "_class": "com.aplicacion.cliente.domains.Facturas"
+},{
+  "_id": {
+    "$oid": "5fc4007b4ee6036529ab2bdf"
+  },
+  "fecha": "2020-12-12",
+  "cuantia": 200.5,
+  "forma_pago": 3,
+  "lineaFactura": {
+    "_id": 2,
+    "fecha": "Sat Dec 12 01:00:00 CET 2020",
+    "importe": 20,
+    "estado": "Pendiente"
+  },
+  "clienteid": 2,
+  "estado": "Impagada",
+  "_class": "com.aplicacion.cliente.domains.Facturas"
+}]

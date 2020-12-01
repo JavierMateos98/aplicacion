@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5fc3890445e21c14255d9b91"
+  },
+  "facturaid": "5fc27bec0460467f9f5eef03",
+  "cantidad": 20,
+  "estadopago": "Pendiente",
+  "_class": "com.aplicacion.cliente.domains.Pagos"
+},{
+  "_id": {
+    "$oid": "5fc3acaf40c4746b65d290b6"
+  },
+  "facturaid": "5fc27bec0460467f9f5eef03",
+  "cantidad": 10,
+  "estadopago": "Pagado",
+  "_class": "com.aplicacion.cliente.domains.Pagos"
+},{
+  "_id": {
+    "$oid": "5fc4009a6fe45f4fba2eeb8f"
+  },
+  "facturaid": "5fc4007b4ee6036529ab2bdf",
+  "cantidad": 10,
+  "estadopago": "Impagado",
+  "_class": "com.aplicacion.cliente.domains.Pagos"
+}]
